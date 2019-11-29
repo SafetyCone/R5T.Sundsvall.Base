@@ -6,7 +6,7 @@ using R5T.Endalia;
 
 namespace R5T.Sundsvall
 {
-    public interface IEndpointsRepository
+    public interface IEndpointRepository
     {
         EndpointIdentity New();
 
