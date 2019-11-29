@@ -4,4 +4,9 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>1701;1702;1591;1573</NoWarn>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\R5T.Corcyra\source\R5T.Corcyra\R5T.Corcyra.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Endalia\source\R5T.Endalia\R5T.Endalia.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Sindia\source\R5T.Sindia\R5T.Sindia.csproj" />
+  </ItemGroup>
 </Project>
