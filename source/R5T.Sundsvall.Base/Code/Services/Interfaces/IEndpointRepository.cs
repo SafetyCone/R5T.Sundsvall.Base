@@ -17,7 +17,7 @@ namespace R5T.Sundsvall
         void SetEndpointType(EndpointIdentity endpoint, EndpointTypeIdentity endpointType);
         EndpointTypeIdentity GetEndpointType(EndpointIdentity endpoint);
 
-        void SetEndpointIdentityForCatchment(CatchmentIdentity catchment, EndpointIdentity endpoint);
-        EndpointIdentity GetEndpointIdentityForCatchment(CatchmentIdentity catchment);
+        void SetEndpointForCatchment(CatchmentIdentity catchment, EndpointIdentity endpoint);
+        EndpointIdentity GetEndpointForCatchment(CatchmentIdentity catchment);
     }
 }
