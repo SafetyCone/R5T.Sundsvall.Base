@@ -11,7 +11,7 @@ namespace R5T.Sundsvall
     {
         EndpointIdentity New();
 
-        void AddByName(EndpointInfo endpointInfo);
+        EndpointIdentity AddByName(EndpointInfo endpointInfo);
 
         EndpointInfo GetInfo(EndpointIdentity identity);
         IEnumerable<EndpointInfo> GetAllInfos();
