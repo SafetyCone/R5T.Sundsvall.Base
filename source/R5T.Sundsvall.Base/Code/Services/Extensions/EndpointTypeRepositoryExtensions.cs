@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 using R5T.Endalia;
 
@@ -7,7 +8,7 @@ namespace R5T.Sundsvall
 {
     public static class EndpointTypeRepositoryExtensions
     {
-        public static void Add(this IEndpointTypeRepository repository, string name)
+        public static async Task Add(this IEndpointTypeRepository repository, string name)
         {
             var endpointTypeInfo = new EndpointTypeInfo()
             {
@@ -15,7 +16,7 @@ namespace R5T.Sundsvall
                 Name = name,
             };
 
-            repository.Add(endpointTypeInfo);
+            await repository.Add(endpointTypeInfo);
         }
     }
 }

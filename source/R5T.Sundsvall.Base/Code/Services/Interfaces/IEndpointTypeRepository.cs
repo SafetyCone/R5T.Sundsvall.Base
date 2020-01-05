@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 using R5T.Endalia;
 
@@ -8,18 +9,18 @@ namespace R5T.Sundsvall
 {
     public interface IEndpointTypeRepository
     {
-        EndpointTypeIdentity New();
+        Task<EndpointTypeIdentity> New();
 
-        void Add(EndpointTypeInfo endpointType);
+        Task Add(EndpointTypeInfo endpointType);
 
-        bool Exists(EndpointTypeIdentity identity);
+        Task<bool> Exists(EndpointTypeIdentity identity);
 
-        EndpointTypeInfo GetInfo(EndpointTypeIdentity identity);
-        IEnumerable<EndpointTypeInfo> GetAllInfos();
+        Task<EndpointTypeInfo> GetInfo(EndpointTypeIdentity identity);
+        Task<IEnumerable<EndpointTypeInfo>> GetAllInfos();
 
-        void SetName(EndpointTypeIdentity identity, string name);
-        string GetName(EndpointTypeIdentity identity);
+        Task SetName(EndpointTypeIdentity identity, string name);
+        Task<string> GetName(EndpointTypeIdentity identity);
 
-        void Delete(EndpointTypeIdentity identity);
+        Task Delete(EndpointTypeIdentity identity);
     }
 }
