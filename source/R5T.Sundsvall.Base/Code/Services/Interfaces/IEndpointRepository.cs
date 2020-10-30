@@ -23,12 +23,11 @@ namespace R5T.Sundsvall
         Task SetEndpointTypeAsync(EndpointIdentity endpoint, EndpointTypeIdentity endpointType);
         Task<EndpointTypeIdentity> GetEndpointType(EndpointIdentity endpoint);
 
+        // TODO: DEPRECATE THE BELOW
         Task<bool> CatchmentHasEndpoint(CatchmentIdentity catchmentIdentity);
         Task<bool> EndpointHasCatchment(EndpointIdentity endpointIdentity);
-
         Task SetEndpointForCatchment(CatchmentIdentity catchment, EndpointIdentity endpoint);
         Task<EndpointIdentity> GetEndpointForCatchment(CatchmentIdentity catchment);
-
         Task<CatchmentIdentity> GetCatchmentForEndpoint(EndpointIdentity endpointIdentity);
     }
 }
